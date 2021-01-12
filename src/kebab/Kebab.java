@@ -18,7 +18,7 @@ public class Kebab {
         // TODO code application logic here
         Thread [] t = new Thread [20];
         for(int i=0;i<t.length;i++){
-            t [i] = new utente(kebabbaro k, i);
+            t[i] = new Thread(new utente(kebabbaro k, i));
         }
     }
 
